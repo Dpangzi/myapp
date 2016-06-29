@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body, html {
+    font-size: 54px;
+    width: 100%;
+    height: 100%;
+}
+
+body .slider {
+    height: 100% !important;
+}
+
+ion-header-bar {
+    text-align: center;
+    height: 1rem !important;
+}
+
+ion-header-bar .buttons {
+    padding: 0 0.1rem;
+
+}
+
+ion-header-bar .buttons button:before {
+    font-size: 0.6rem !important;
+}
+
+ion-header-bar .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    max-width: 65%;
+    font-size: 0.35rem !important;
+    margin: 0px auto !important;
+    line-height: 1rem !important;
+    height: 1rem !important;
+}
+
+/*********************************movie  information************************************/
+
+ion-content {
+    top: 1rem !important;
+}
+
+ion-content section {
+    padding: 0.05rem 0.35rem;
+    background-color: #f0efed;
+    color: #333;
+    vertical-align: middle;
+}
+
+ion-content section .name {
+    font-size: 0.28rem;
+    margin: 0px;
+    padding: 0.08rem 0.2rem;
+    display: inline-block;
+    max-width: 70%;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #2eb6a8;
+    border-radius: 13px;
+    color: white;
+}
+
+ion-content section .address {
+    position: relative;
+    padding: 0px 0.1rem;
+    font-size: 0.2rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ion-content section a {
+    text-decoration: underline;
+    display: inline-block;
+    color: red;
+}
+
+ion-content .movie-list {
+    background-color: #5b5b5b;
+    height: 2.58rem;
+    padding: 0.05rem 0.1rem;
+}
+
+ion-content .movie-list ul {
+    vertical-align: middle;
+    height: 2.5rem;
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0px 4px;
+}
+
+ion-content .movie-list ul li {
+    vertical-align: middle;
+    display: flex;
+}
+
+ion-content .movie-list ul li img {
+    height: 2.1rem;
+    margin: 0.19rem 0.08rem;
+    border: 0.01rem solid #5b5b5b;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+ion-content .movie-list ul li img:hover {
+    border: 0.01rem solid white;
+    -moz-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+
+}
+
+ion-content .info {
+    font-size: 0.25rem;
+    padding: 0.08rem 0.4rem;
+    color: #333;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    line-height: 0.4rem;
+    white-space: nowrap;
+}
+
+ion-content .info .movie-name {
+    padding: 0.03rem 0.11rem;
+}
+
+ion-content .info .movie-attr {
+    padding: 0.02rem 0.11rem;
+    background: #2895db;
+    border-radius: 10px;
+    color: white;
+    margin-left: 0.05rem;
+    vertical-align: top;
+}
+
+ion-content .info .movie-value {
+    margin-left: 0.05rem;
+    padding: 0.03rem 0.11rem;
+    color: orangered;
+}
+
+ion-content .day {
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    height: 0.8rem;
+    font-size: 0.25rem;
+    display: flex;
+    padding-left: 0.1rem;
+    vertical-align: middle;
+    color: white;
+}
+
+ion-content .day span {
+    padding: 0rem 0.3rem;
+    line-height: 0.55rem;
+    background-color: #2eb6a8;
+    margin: 0.1rem 0;
+    margin-left: 0.2rem;
+    border-radius: 13px;
+    text-align: center;
+    max-width: 2.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ion-content .itemRow .plan-details {
+    background: white;
+    display: flex;
+
+    font-size: 0.2rem;
+    vertical-align: middle;
+    line-height: 1.2rem;
+    height: 1.2rem;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-around;
+    color: #69717d;
+
+    white-space: nowrap;
+}
+
+ion-content .itemRow .plan-details .time {
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.5rem;
+}
+
+ion-content .itemRow .plan-details .time .begintime {
+    font-size: 0.3rem;
+    color: red;
+    font-weight: bolder;
+}
+
+ion-content .itemRow .plan-details .atrr-info {
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.5rem;
+}
+
+ion-content .itemRow .plan-details .atrr-info .room {
+    font-weight: bolder;
+}
+
+ion-content .itemRow .plan-details .price {
+    color: #2eb6a8;
+    font-weight: bolder;
+    font-size: 0.3rem;
+}
+
+ion-content .itemRow .plan-details .buy button {
+    vertical-align: middle;
+    height: 0.7rem;
+    font-size: 0.2rem;
+    min-height: 0.7rem;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid orange;
+    line-height: 0rem !important;
+}
+
+/****************************** select movie**************************************/
+
+ion-content.selectSeat
+{
+    height: 200px;
+
+}
+
+ion-content.selectSeat section
+{
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
