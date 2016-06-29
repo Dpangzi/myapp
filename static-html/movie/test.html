@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="seat">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="./css/ionicons.min.css" rel="stylesheet">
+    <link href="./css/ionic.css" rel="stylesheet">
+    <link href="./css/mycss.css" rel="stylesheet">
+    <script src="./js/ionic.bundle.js"></script>
+    <script >
+        angular.module("seat",["ionic"]).controller("MyCtrl",function($scope,$ionicSlideBoxDelegate)
+        {
+                $scope.nextSlide = function() {
+                    $ionicSlideBoxDelegate.next();
+
+                }
+        });
+    </script>
+</head>
+<body ng-controller="MyCtrl">
+<ion-slide-box>
+    <ion-slide>
+        <div class="box blue">
+            <button ng-click="nextSlide()">下一个滑块!</button>
+        </div>
+    </ion-slide>
+    <ion-slide>
+        <div class="box red">
+            滑块 2!
+        </div>
+    </ion-slide>
+</ion-slide-box>
+</body>
+</html>
